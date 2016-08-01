@@ -28,6 +28,11 @@ class PlayerHandler(webapp2.RequestHandler):
 	def get(self):
 		template = env.get_template('player.html')
 		self.response.write(template.render())
+class TimerHandler(webapp2.RequestHandler):
+	def get(self):
+		template=env.get_template('timer.html')
+		self.response.write(template.render())
+	
 
 
 app = webapp2.WSGIApplication([
