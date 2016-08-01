@@ -38,5 +38,5 @@ class TimerHandler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/player', PlayerHandler),
-    ('time', TimeHandler)
+    ('time', TimerHandler)
 ], debug=True)
