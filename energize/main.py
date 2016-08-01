@@ -31,6 +31,6 @@ class PlayerHandler(webapp2.RequestHandler):
 
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandle
+    ('/', MainHandler),
     ('/player', PlayerHandler)
 ], debug=True)
